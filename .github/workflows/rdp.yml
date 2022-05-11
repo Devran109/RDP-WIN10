@@ -33,7 +33,7 @@ jobs:
     - name: 5. Membuat Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
 
-    - name: 6. RDP  [CPU 2 Core - 7GB Ram - 256 SSD]
+    - name: 6. LOGIN RDP  [CPU 2 Core - 7GB Ram - 256 SSD]
       run: cmd /c start.bat
 
     - name: 7. Install Winrar
