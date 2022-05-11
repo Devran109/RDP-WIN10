@@ -12,10 +12,10 @@ sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
 ICACLS C:\Windows\Temp /grant LittleFox:F >nul
 ICACLS C:\Windows\installer /grant LittleFox:F >nul
-echo Successfully installed! If RDP is dead, rebuild again.
+echo Sukses Menginstall RDP
 echo IP:
-tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Failed to retreive NGROK authtoken - check again your authtoken"
+tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Gagal mendapatkan kode ngrok"
 echo Username: LittleFox
 echo Password: 6454@nili
-echo You can login now
+echo LOGIN SEKARANG
 ping -n 10 127.0.0.1 >nul
