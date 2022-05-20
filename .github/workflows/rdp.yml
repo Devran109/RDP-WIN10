@@ -42,10 +42,10 @@ jobs:
     - name: 8. Waktu Proses
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/AyGemuy/ngrok-rdp/main/resources/loop.ps1 -OutFile loop.ps1
-        apt install git
-        apt install nodejs
-        apt install ffmpeg
-        apt install imagemagick
+        sudo apt-get install git
+        sudo apt-get install nodejs
+        sudo apt-get install ffmpeg
+        sudo apt-get install imagemagick
         git clone https://github.com/AyGemuy/TheMystic-Bot
         cd TheMystic-Bot
         npm install
